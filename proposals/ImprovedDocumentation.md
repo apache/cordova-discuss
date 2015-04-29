@@ -12,3 +12,4 @@ Here are topcis for new articles that we can add. If you already know of an arti
 - Documentation around `--save` command for plugins and platforms
 - More info on `<plugin>` tag replacing `<feature>`. Also how `<plugin>` tag autofetches on prepare
 - Whitelisting Guide
+- Non CLI workflows (more npm/grunt/gulp friendly ones)
