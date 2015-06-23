@@ -14,7 +14,7 @@ The PlatformApi instance also should define the following field:
 
 * [PlatformApi()](#PlatformApi)
   * _instance_
-    * [.prepare(projectInfo)](#PlatformApi+prepare) ⇒ <code>Promise</code>
+    * [.prepare(cordovaProject)](#PlatformApi+prepare) ⇒ <code>Promise</code>
     * [.addPlugin(plugin, installOptions)](#PlatformApi+addPlugin) ⇒ <code>Promise</code>
     * [.removePlugin(pluginId)](#PlatformApi+removePlugin) ⇒ <code>Promise</code>
     * [.build(buildOptions)](#PlatformApi+build) ⇒ <code>Promise.&lt;Array.&lt;String&gt;&gt;</code>
@@ -22,11 +22,11 @@ The PlatformApi instance also should define the following field:
     * [.clean()](#PlatformApi+clean) ⇒ <code>Promise</code>
     * [.requirements()](#PlatformApi+requirements) ⇒ <code>Promise.&lt;Array.&lt;Requirement&gt;&gt;</code>
   * _static_
-    * [.createPlatform(projectInfo, options)](#PlatformApi.createPlatform) ⇒ <code>[Promise.&lt;PlatformApi&gt;](#PlatformApi)</code>
+    * [.createPlatform(cordovaProject, options)](#PlatformApi.createPlatform) ⇒ <code>[Promise.&lt;PlatformApi&gt;](#PlatformApi)</code>
     * [.getPlatformInfo()](#PlatformApi.getPlatformInfo) ⇒ <code>PlatformInfo</code>
 
 <a name="PlatformApi+prepare"></a>
-### platformApi.prepare(projectInfo) ⇒ <code>Promise</code>
+### platformApi.prepare(cordovaProject) ⇒ <code>Promise</code>
 Updates installed platform with provided www assets and new app
   configuration. This method is required for CLI workflow and will be called
   each time before build, so the changes, made to app configuration and www
@@ -38,7 +38,7 @@ Updates installed platform with provided www assets and new app
 
 | Param | Type | Description |
 | --- | --- | --- |
-| projectInfo | <code>ProjectInfo</code> | A ProjectInfo instance, that defines a   project structure and configuration, that should be applied to platform   (contains project's www location and ConfigParser instance for project's   config). |
+| cordovaProject | <code>CordovaProject</code> | A CordovaProject instance, that defines a   project structure and configuration, that should be applied to platform   (contains project's www location and ConfigParser instance for project's   config). |
 
 <a name="PlatformApi+addPlugin"></a>
 ### platformApi.addPlugin(plugin, installOptions) ⇒ <code>Promise</code>
@@ -128,7 +128,7 @@ Performs a requirements check for current platform. Each platform defines its
 **Returns**: <code>Promise.&lt;Array.&lt;Requirement&gt;&gt;</code> - Promise, resolved with set of Requirement
   objects for current platform.
 <a name="PlatformApi.createPlatform"></a>
-### PlatformApi.createPlatform(projectInfo, options) ⇒ <code>[Promise.&lt;PlatformApi&gt;](#PlatformApi)</code>
+### PlatformApi.createPlatform(cordovaProject, options) ⇒ <code>[Promise.&lt;PlatformApi&gt;](#PlatformApi)</code>
 Installs platform to specified directory and creates a platform project.
 
 **Kind**: static method of <code>[PlatformApi](#PlatformApi)</code>
@@ -137,7 +137,7 @@ Installs platform to specified directory and creates a platform project.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| projectInfo | <code>ProjectInfo</code> | A ProjectInfo instance, that defines a   project structure and configuration, that should be applied to new platform   (contains platform's target location and ConfigParser instance for   project's config). This argument is optional and if not defined, this means   that platform is used as standalone project and is not a part of cordova   project. |
+| cordovaProject | <code>CordovaProject</code> | A CordovaProject instance, that defines a   project structure and configuration, that should be applied to new platform   (contains platform's target location and ConfigParser instance for   project's config). This argument is optional and if not defined, this means   that platform is used as standalone project and is not a part of cordova   project. |
 | options | <code>Object</code> | An options object. The most common options are: |
 | options.customTemplate | <code>String</code> | A path to custom template, that   should override the default one from platform. |
 | options.link | <code>Boolean</code> | Flag that indicates that platform's sources   will be linked to installed platform instead of copying. |

@@ -21,7 +21,7 @@ function PlatformApi() {}
 /**
  * Installs platform to specified directory and creates a platform project.
  *
- * @param  {ProjectInfo} projectInfo A ProjectInfo instance, that defines a
+ * @param  {CordovaProject} cordovaProject A CordovaProject instance, that defines a
  *   project structure and configuration, that should be applied to new platform
  *   (contains platform's target location and ConfigParser instance for
  *   project's config). This argument is optional and if not defined, this means
@@ -36,7 +36,7 @@ function PlatformApi() {}
  * @return {Promise<PlatformApi>} Promise either fulfilled with PlatformApi
  *   instance or rejected with CordovaError.
  */
-PlatformApi.createPlatform = function (projectInfo, options) {};
+PlatformApi.createPlatform = function (cordovaProject, options) {};
 
 /**
  * Gets a PlatformInfo object, that represents the platform structure.
@@ -52,7 +52,7 @@ PlatformApi.getPlatformInfo = function () {};
  *   each time before build, so the changes, made to app configuration and www
  *   code, will be applied to platform.
  *
- * @param {ProjectInfo} projectInfo A ProjectInfo instance, that defines a
+ * @param {CordovaProject} cordovaProject A CordovaProject instance, that defines a
  *   project structure and configuration, that should be applied to platform
  *   (contains project's www location and ConfigParser instance for project's
  *   config).
@@ -60,7 +60,7 @@ PlatformApi.getPlatformInfo = function () {};
  * @return  {Promise}  Return a promise either fulfilled, or rejected with
  *   CordovaError instance.
  */
-PlatformApi.prototype.prepare = function (projectInfo) {};
+PlatformApi.prototype.prepare = function (cordovaProject) {};
 
 /**
  * Installs a new plugin into platform. This method only copies non-www files
