@@ -148,9 +148,19 @@ PlatformApi.prototype.removePlugin = function (plugin) {};
  *   platform-specific arguments, and eventually let platform define own
  *   arguments processing logic.
  *
- * @return {Promise<String[]>} A promise either fulfilled with an array of build
- *   artifacts (application packages) paths if package was built successfully,
- *   or rejected with CordovaError.
+ * @return {Promise<Object[]>} A promise either fulfilled with an array of build
+ *   artifacts (application packages) if package was built successfully,
+ *   or rejected with CordovaError. The resultant build artifact objects is not
+ *   strictly typed and may conatin arbitrary set of fields as in sample below.
+ *
+ * ```
+ * {
+ *   architecture: 'x86',
+ *   buildType: 'debug',
+ *   path: '/path/to/build',
+ *   type: 'app'
+ * }
+ * ```
  *
  * The return value in most cases will contain only one item but in some cases
  *   there could be multiple items in output array, e.g. when multiple

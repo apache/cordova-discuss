@@ -10,7 +10,7 @@ Class, that acts as abstraction over particular platform. Encapsulates the  pla
     * [.prepare(cordovaProject)](#PlatformApi+prepare) ⇒ <code>Promise</code>
     * [.addPlugin(plugin, installOptions)](#PlatformApi+addPlugin) ⇒ <code>Promise</code>
     * [.removePlugin(plugin)](#PlatformApi+removePlugin) ⇒ <code>Promise</code>
-    * [.build(buildOptions)](#PlatformApi+build) ⇒ <code>Promise.&lt;Array.&lt;String&gt;&gt;</code>
+    * [.build(buildOptions)](#PlatformApi+build) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
     * [.run(runOptions)](#PlatformApi+run) ⇒ <code>Promise</code>
     * [.clean()](#PlatformApi+clean) ⇒ <code>Promise</code>
     * [.requirements()](#PlatformApi+requirements) ⇒ <code>Promise.&lt;Array.&lt;Requirement&gt;&gt;</code>
@@ -61,11 +61,11 @@ Removes an installed plugin from platform.Since method accepts PluginInfo inst
 | plugin | <code>PluginInfo</code> | A PluginInfo instance that represents plugin   that will be installed. |
 
 <a name="PlatformApi+build"></a>
-### platformApi.build(buildOptions) ⇒ <code>Promise.&lt;Array.&lt;String&gt;&gt;</code>
+### platformApi.build(buildOptions) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
 Builds an application package for current platform.
 
 **Kind**: instance method of <code>[PlatformApi](#PlatformApi)</code>  
-**Returns**: <code>Promise.&lt;Array.&lt;String&gt;&gt;</code> - A promise either fulfilled with an array of build  artifacts (application packages) paths if package was built successfully,  or rejected with CordovaError.The return value in most cases will contain only one item but in some cases  there could be multiple items in output array, e.g. when multiple  arhcitectures is specified.  
+**Returns**: <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code> - A promise either fulfilled with an array of build  artifacts (application packages) if package was built successfully,  or rejected with CordovaError. The resultant build artifact objects is not  strictly typed and may conatin arbitrary set of fields as in sample below.```{  architecture: 'x86',  buildType: 'debug',  path: '/path/to/build',  type: 'app'}```The return value in most cases will contain only one item but in some cases  there could be multiple items in output array, e.g. when multiple  arhcitectures is specified.  
 
 | Param | Type | Description |
 | --- | --- | --- |
