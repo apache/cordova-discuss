@@ -39,12 +39,32 @@ function PlatformApi() {}
 PlatformApi.createPlatform = function (cordovaProject, options) {};
 
 /**
+ * Updates already installed platform.
+ *
+ * @param   {CordovaProject}  cordovaProject  A CordovaProject instance, that
+ *   defines a project structure and configuration, that should be applied to
+ *   new platform (contains platform's target location and ConfigParser instance
+ *   for project's config). This argument is optional and if not defined, this
+ *   means that platform is used as standalone project and is not a part of
+ *   cordova project.
+ * @param  {Object}  options  An options object. The most common options are:
+ * @param  {String}  options.customTemplate  A path to custom template, that
+ *   should override the default one from platform.
+ * @param  {Boolean}  options.link  Flag that indicates that platform's sources
+ *   will be linked to installed platform instead of copying.
+ *
+ * @return {Promise<PlatformApi>} Promise either fulfilled with PlatformApi
+ *   instance or rejected with CordovaError.
+ */
+PlatformApi.updatePlatform = function (cordovaProject, options) {};
+
+/**
  * Gets a PlatformInfo object, that represents the platform structure.
  *
  * @return  {PlatformInfo}  A structure that contains the description of
  *   platform's file structure and other 'static' properties of platform.
  */
-PlatformApi.getPlatformInfo = function () {};
+PlatformApi.prototype.getPlatformInfo = function () {};
 
 /**
  * Updates installed platform with provided www assets and new app
@@ -87,13 +107,17 @@ PlatformApi.prototype.addPlugin = function (plugin, installOptions) {};
 /**
  * Removes an installed plugin from platform.
  *
- * @param  {String}  pluginId  An id of plugin that should be removed from
- *   platform.
+ * Since method accepts PluginInfo instance as input parameter instead of plugin
+ *   id, caller shoud take care of managing/storing PluginInfo instances for
+ *   future uninstalls.
+ *
+ * @param  {PluginInfo}  plugin  A PluginInfo instance that represents plugin
+ *   that will be installed.
  *
  * @return  {Promise}  Return a promise either fulfilled, or rejected with
  *   CordovaError instance.
  */
-PlatformApi.prototype.removePlugin = function (pluginId) {};
+PlatformApi.prototype.removePlugin = function (plugin) {};
 
 /**
  * Builds an application package for current platform.
