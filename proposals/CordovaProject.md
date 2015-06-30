@@ -8,6 +8,7 @@
     * [.www](#CordovaProject+locations.www) : <code>String</code>
     * [.configXml](#CordovaProject+locations.configXml) : <code>String</code>
     * [.platforms](#CordovaProject+locations.platforms) : <code>String</code>
+    * [.plugins](#CordovaProject+locations.plugins) : <code>String</code>
   * [.root](#CordovaProject+root) : <code>String</code>
   * [.buildConfig](#CordovaProject+buildConfig) : <code>BuildConfig</code>
   * [.projectConfig](#CordovaProject+projectConfig) : <code>ConfigParser</code>
@@ -26,6 +27,7 @@ Simple object that exposes this project's filesystem locations, such as www  di
   * [.www](#CordovaProject+locations.www) : <code>String</code>
   * [.configXml](#CordovaProject+locations.configXml) : <code>String</code>
   * [.platforms](#CordovaProject+locations.platforms) : <code>String</code>
+  * [.plugins](#CordovaProject+locations.plugins) : <code>String</code>
 
 <a name="CordovaProject+locations.www"></a>
 #### locations.www : <code>String</code>
@@ -42,6 +44,11 @@ config.xml file location
 Installed platforms location
 
 **Kind**: static property of <code>[locations](#CordovaProject+locations)</code>  
+<a name="CordovaProject+locations.plugins"></a>
+#### locations.plugins : <code>String</code>
+Installed plugins location
+
+**Kind**: static property of <code>[locations](#CordovaProject+locations)</code>  
 <a name="CordovaProject+root"></a>
 ### cordovaProject.root : <code>String</code>
 The project's root location.
@@ -49,7 +56,7 @@ The project's root location.
 **Kind**: instance property of <code>[CordovaProject](#CordovaProject)</code>  
 <a name="CordovaProject+buildConfig"></a>
 ### cordovaProject.buildConfig : <code>BuildConfig</code>
-Represents the configuration, used for building project. Populated with  values from buildconfig.json, if exists, or with some default values,  if not.
+Represents the configuration, used for building project. Populated with  values from build.json, if exists, or with some default values,  if not.
 
 **Kind**: instance property of <code>[CordovaProject](#CordovaProject)</code>  
 <a name="CordovaProject+projectConfig"></a>

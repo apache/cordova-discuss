@@ -21,8 +21,10 @@ function CordovaProject(root) {
         www: path.join(root, 'www'),
         /** @type {String} config.xml file location  */
         configXml: path.join(root, 'config.xml'),
-        /** @type {String } Installed platforms location */
-        platforms: path.join(root, 'platforms')
+        /** @type {String} Installed platforms location */
+        platforms: path.join(root, 'platforms'),
+        /** @type {String} Installed plugins location */
+        plugins: path.join(root, 'plugins')
     };
 
     /**
@@ -34,7 +36,7 @@ function CordovaProject(root) {
 
     /**
      * Represents the configuration, used for building project. Populated with
-     *   values from buildconfig.json, if exists, or with some default values,
+     *   values from build.json, if exists, or with some default values,
      *   if not.
      *
      * @type {BuildConfig}
