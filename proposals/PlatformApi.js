@@ -59,10 +59,10 @@ PlatformApi.createPlatform = function (cordovaProject, options) {};
 PlatformApi.updatePlatform = function (cordovaProject, options) {};
 
 /**
- * Gets a PlatformInfo object, that represents the platform structure.
+ * Gets a CordovaPlatform object, that represents the platform structure.
  *
- * @return  {PlatformInfo}  A structure that contains the description of
- *   platform's file structure and other 'static' properties of platform.
+ * @return  {CordovaPlatform}  A structure that contains the description of
+ *   platform's file structure and other properties of platform.
  */
 PlatformApi.prototype.getPlatformInfo = function () {};
 

@@ -6,7 +6,7 @@ Class, that acts as abstraction over particular platform. Encapsulates the  pla
 
 * [PlatformApi()](#PlatformApi)
   * _instance_
-    * [.getPlatformInfo()](#PlatformApi+getPlatformInfo) ⇒ <code>PlatformInfo</code>
+    * [.getPlatformInfo()](#PlatformApi+getPlatformInfo) ⇒ <code>CordovaPlatform</code>
     * [.prepare(cordovaProject)](#PlatformApi+prepare) ⇒ <code>Promise</code>
     * [.addPlugin(plugin, installOptions)](#PlatformApi+addPlugin) ⇒ <code>Promise</code>
     * [.removePlugin(plugin)](#PlatformApi+removePlugin) ⇒ <code>Promise</code>
@@ -19,11 +19,11 @@ Class, that acts as abstraction over particular platform. Encapsulates the  pla
     * [.updatePlatform(cordovaProject, options)](#PlatformApi.updatePlatform) ⇒ <code>[Promise.&lt;PlatformApi&gt;](#PlatformApi)</code>
 
 <a name="PlatformApi+getPlatformInfo"></a>
-### platformApi.getPlatformInfo() ⇒ <code>PlatformInfo</code>
-Gets a PlatformInfo object, that represents the platform structure.
+### platformApi.getPlatformInfo() ⇒ <code>CordovaPlatform</code>
+Gets a CordovaPlatform object, that represents the platform structure.
 
 **Kind**: instance method of <code>[PlatformApi](#PlatformApi)</code>  
-**Returns**: <code>PlatformInfo</code> - A structure that contains the description of  platform's file structure and other 'static' properties of platform.  
+**Returns**: <code>CordovaPlatform</code> - A structure that contains the description of  platform's file structure and other properties of platform.  
 <a name="PlatformApi+prepare"></a>
 ### platformApi.prepare(cordovaProject) ⇒ <code>Promise</code>
 Updates installed platform with provided www assets and new app  configuration. This method is required for CLI workflow and will be called  each time before build, so the changes, made to app configuration and www  code, will be applied to platform.
