@@ -24,7 +24,7 @@ Time | Agenda
 Time | Agenda
 ---|---
 10:00 - 10:30 |  Finalize smaller teams for more focussed discussions
-10:30 - 12:00 |  Continue discussions on specific topcis
+10:30 - 12:00 |  Continue discussions on specific topics
 12:-1:00 |  Lunch
 1:00 - 4:00 | Break out sessions, smaller groups
 4:00 | End of sessions, recap
