@@ -3,7 +3,7 @@
  | |
 --- | --- | ---
 Date | 14 & 15 October, 2015
-Location | Redmond, WA, USA
+Location | Building 33, 16070 NE 36th Way, Redmond, WA, USA 98052 (Room Name - Rainier)
 Streaming | Working on a link
 
 
