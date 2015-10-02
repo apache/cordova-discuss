@@ -38,4 +38,3 @@ Time | Agenda
 
 - Cordova Security Process and Procedures - (Discussion on timelines, mostly for PMC/Committers)
 - Cordova Workflow for Contributors (How do I debug a platform issue?) - Joe
-- 
