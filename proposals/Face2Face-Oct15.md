@@ -12,20 +12,29 @@ Streaming | Working on a link
 ### Day 1: October 14, 2015
 
 Time | Agenda
----|---
-10:30 - 11:00 |  Introductions, State of the Union
-11:00 - 12:00 | Finalize agenda for the 2 days
-12:00 - 2:00 |  Lunch, Networking
-2:00 - 5:00 | Major Topics for Discusssions, with break in the middle
+-----|-----
+08:00 - 10:00 | Optional Breakfast and Networking
+10:30 - 11:00 | Introductions, State of the Union (@Shaz)
+11:00 - 12:00 | Cordova Round Table (discuss broadly applicable topics like roadmap, processes, etc)
+12:00 - 1:00  | Lunch
+ 1:00 - 4:00  | Smaller workgroups - to discuss specific topcs
+ 4:00 - 5:00  | Getting back together, discuss results from breakouts
 5:00 |  End time (and head to bar for beer)
 
 ### Day2: October 15, 2015
 
 Time | Agenda
----|---
-10:00 - 10:30 |  Finalize smaller teams for more focussed discussions
-10:30 - 12:00 |  Continue discussions on specific topics
-12:-1:00 |  Lunch
-1:00 - 4:00 | Break out sessions, smaller groups
-4:00 | End of sessions, recap
+-----|-----
+ 9:00 - 10:00 | Breakfast
+10:00 - 12:00 | Cordova Ecosystem Show and tell - presentations on how Cordova is used in tools or projects. 
+12:00 - 1:00  | Lunch
+ 1:00 - 4:00  | Smaller workgroups - to discuss specific topcs
+ 4:00 - 5:00  | Getting back together, discuss results from breakouts
+ 5:00         | End of sessions, recap
 
+
+
+## Topics for Breakout Sessions and people interested in it
+
+- <Add topics you would like to talk about here>
+- 
