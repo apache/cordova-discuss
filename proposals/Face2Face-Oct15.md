@@ -38,7 +38,7 @@ Topic | I wan to attend
 -----|-----
 - Cordova Security Process and Procedures - (Discussion on timelines, mostly for PMC/Committers) | Joe, Carlos
 - Cordova Workflow for Contributors (How do I debug a platform issue?) | Joe, Carlos
-- 3rd Party node modules checked into Cordova git (legal, screaning, maintaining) | Carlos
+- 3rd Party npm dependencies  & checked into Cordova git (legal, screaning, maintaining) | Carlos
 - Cocoapods as dependencies in plugin.xml same way as gradle | Carlos
 - 2 Modes, Production vs. Dev to support ES6, Typescript, www-dist | Carlos
 - A new inAPpBrowser for iOS based on SafariViewController | Carlos
