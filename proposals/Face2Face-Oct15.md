@@ -43,4 +43,5 @@ Topic | I wan to attend
 - 2 Modes, Production vs. Dev to support ES6, Typescript, www-dist | Carlos
 - A new inAPpBrowser for iOS based on SafariViewController | Carlos
 - TACO Kits, How to have a slower and safer adoption on upgrades | Carlos
+- Cordova Desktop Browser - Electron JS + Emulation/Ripple | Carlos
 
