@@ -33,8 +33,13 @@ Time | Agenda
  5:00         | End of sessions, recap
 
 
-
 ## Topics for Breakout Sessions and people interested in it
+Topic | I wan to attend
+-----|-----
+- Cordova Security Process and Procedures - (Discussion on timelines, mostly for PMC/Committers) | Joe, Carlos
+- Cordova Workflow for Contributors (How do I debug a platform issue?) | Joe, Carlos
+- How are you using Cordova in your product (short demos) | Carlos
+- 3rd Party node modules checked into Cordova git (legal, screaning, maintaining) | Carlos
+- Get cordova-ios@4 out, or work on cordova-ios@5 | Carlos
+- Cocoapods as dependencies in plugin.xml same way as gradle | Carlos
 
-- Cordova Security Process and Procedures - (Discussion on timelines, mostly for PMC/Committers)
-- Cordova Workflow for Contributors (How do I debug a platform issue?) - Joe
