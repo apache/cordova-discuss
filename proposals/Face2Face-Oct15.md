@@ -34,14 +34,55 @@ Time | Agenda
 
 
 ## Topics for Breakout Sessions and people interested in it
-Topic | I wan to attend
------|-----
-- Cordova Security Process and Procedures - (Discussion on timelines, mostly for PMC/Committers) | Joe, Carlos
-- Cordova Workflow for Contributors (How do I debug a platform issue?) | Joe, Carlos
-- 3rd Party npm dependencies  & checked into Cordova git (legal, screaning, maintaining) | Carlos
-- Cocoapods as dependencies in plugin.xml same way as gradle | Carlos
-- 2 Modes, Production vs. Dev to support ES6, Typescript, www-dist | Carlos
-- A new inAPpBrowser for iOS based on SafariViewController | Carlos
-- TACO Kits, How to have a slower and safer adoption on upgrades | Carlos
-- Cordova Desktop Browser - Electron JS + Emulation/Ripple | Carlos
+### Cordova Community Processes & Engineering System
+Topic | Attendee
+------|------
+Cordova Security Process and Procedures - (Discussion on timelines, mostly for PMC/Committers) | Joe, Carlos
+JIRA triage - Who's responsible & accountable - Stategies for dealing with Bug/Quality debt  | Nikhil 
+Keep documentation up-to-date | Nikhil
+Cordova Workflow for Contributors (How do I debug a platform issue?) | Joe, Carlos
+Communication of breaking changes - major platform updates | Nikhil
+How do we maintain high quality? | Nikhil
+How to encourage external contribution? |
 
+
+### Plugin Ecosystem
+-----------------
+Topic | Attendee
+------|------
+How to influence quality improvements for Cordova plugins? |
+Documenting platforms APIs for plugins |
+Cocoapods as dependencies in plugin.xml same way as gradle | Carlos
+TACO Kits - validated plugins, How to have a slower and safer adoption on upgrades | Carlos
+Versioning Hell - Which plugin works with which platform? How should I upgrade my Cordova project? | Nikhil
+What can we learn from the React Native plugin API? |
+
+
+### Downsteam Tooling ideas
+-----------------
+Topic | Attendee
+------|------
+What do integrators need from Cordova? |
+PlatformApi refactoring |
+Standardized logging and error/progress reporting |
+
+### Others
+-----------------
+Topic | Attendee
+------|------
+Is the distinction between the CLI vs. platform-centered workflow still valid? |
+What is needed to allow customizing native (Xcode/Gradle/...) projects when using the CLI? |
+Can we share tools or plugins with React Native? |
+2 Modes, Production vs. Dev to support ES6, Typescript, www-dist | Carlos
+A new inAppBrowser for iOS based on SafariViewController | Carlos
+Cordova Desktop Browser - Electron JS + Emulation/Ripple | Carlos
+3rd Party npm dependencies  & checked into Cordova git (legal, screaning, maintaining) | Carlos
+
+### More
+- How can we improve the development experience?
+  - What can we learn from the React Native developer experience?
+    - Replacing 'white screen of death' with an error reporting screen
+    - Adding a development/debugger menu
+  - How can we make platform installation easier?
+    - Improve requirements checking and error messages
+    - Install SDKs with one command (TACO)
