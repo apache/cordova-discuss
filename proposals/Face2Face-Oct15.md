@@ -58,21 +58,30 @@ Versioning Hell - Which plugin works with which platform? How should I upgrade m
 What can we learn from the React Native plugin API? |
 
 
-### Downsteam Tooling ideas
+### Downstream Tooling ideas
 -----------------
 Topic | Attendee
 ------|------
+Tension between innovation vs. being part of an ecosystem |
+What belongs in Cordova and what should be left to downstream tools? |
 What do integrators need from Cordova? |
 PlatformApi refactoring |
 Standardized logging and error/progress reporting |
+
+
+### Hybrid Apps & Native Development
+-----------------
+Topic | Attendee
+------|------
+What is needed to allow customizing native (Xcode/Gradle/...) projects when using the CLI? |
+Is the distinction between the CLI vs. platform-centered workflow still valid? |
+Supporting multiple web views (e.g. for native navigation + web content scenarios) |
+Can we share tools or plugins with React Native? |
 
 ### Others
 -----------------
 Topic | Attendee
 ------|------
-Is the distinction between the CLI vs. platform-centered workflow still valid? |
-What is needed to allow customizing native (Xcode/Gradle/...) projects when using the CLI? |
-Can we share tools or plugins with React Native? |
 2 Modes, Production vs. Dev to support ES6, Typescript, www-dist | Carlos
 A new inAppBrowser for iOS based on SafariViewController | Carlos
 Cordova Desktop Browser - Electron JS + Emulation/Ripple | Carlos
