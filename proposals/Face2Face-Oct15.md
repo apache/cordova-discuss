@@ -58,6 +58,7 @@ Cocoapods as dependencies in plugin.xml same way as gradle | Carlos
 TACO Kits - validated plugins, How to have a slower and safer adoption on upgrades | Carlos
 Versioning Hell - Which plugin works with which platform? How should I upgrade my Cordova project? | Nikhil
 What can we learn from the React Native plugin API? |
+Tips and Documentation for Debugging Cordova Plugins |
 
 
 ### Downstream Tooling ideas
