@@ -115,9 +115,9 @@ Cordova Desktop Browser - Electron JS + Emulation/Ripple | Carlos
     - Improve requirements checking and error messages
     - Install SDKs with one command (TACO)
 - Platform-specific topics
-  -(windows) why is windows icon list so limited?  should it be possible to specify more?
-  -(windows) Any options for HTML5 debugging for Windows 10 devices?
-  -(windows) security related to windows preview apps - how to allow dyanmic content to access plugin APIs?
-  -(web-os) web-os setup broken, document and discuss)
-  -(iOS) wkwebview - recap of current approach, is it iOS 9 only?
-  -(android) annoyance/issue - appending of architecture digit problem?
+  - (windows) why is windows icon list so limited?  should it be possible to specify more?
+  - (windows) Any options for HTML5 debugging for Windows 10 devices?
+  - (windows) security related to windows preview apps - how to allow dyanmic content to access plugin APIs?
+  - (web-os) web-os setup broken, document and discuss)
+  - (iOS) wkwebview - recap of current approach, is it iOS 9 only?
+  - (android) annoyance/issue - appending of architecture digit problem?
