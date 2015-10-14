@@ -80,6 +80,7 @@ What is needed to allow customizing native (Xcode/Gradle/...) projects when usin
 Is the distinction between the CLI vs. platform-centered workflow still valid? |
 Supporting multiple web views (e.g. for native navigation + web content scenarios) |
 Can we share tools or plugins with React Native? |
+Allow per-platform ids? |
 
 
 ### CI & Testing
@@ -112,3 +113,10 @@ Cordova Desktop Browser - Electron JS + Emulation/Ripple | Carlos
   - How can we make platform installation easier?
     - Improve requirements checking and error messages
     - Install SDKs with one command (TACO)
+- Platform-specific topics
+  -(windows) why is windows icon list so limited?  should it be possible to specify more?
+  -(windows) Any options for HTML5 debugging for Windows 10 devices?
+  -(windows) security related to windows preview apps - how to allow dyanmic content to access plugin APIs?
+  -(web-os) web-os setup broken, document and discuss)
+  -(iOS) wkwebview - recap of current approach, is it iOS 9 only?
+  -(android) annoyance/issue - appending of architecture digit problem?
