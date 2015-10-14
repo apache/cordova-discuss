@@ -33,7 +33,7 @@ Time | Agenda
  5:00         | End of sessions, recap
 
 
-## Topics for Breakout Sessions and people interested in it
+## Day One Topics
 
 ### Cordova Community Processes & Engineering System
 
@@ -41,11 +41,7 @@ Topic | Attendee
 ------|---------
 Cordova Security Process and Procedures - (Discussion on timelines, mostly for PMC/Committers) | Joe, Carlos
 JIRA triage - Who's responsible & accountable - Stategies for dealing with Bug/Quality debt  | Nikhil
-Keep documentation up-to-date | Nikhil
-Cordova Workflow for Contributors (How do I debug a platform issue?) | Joe, Carlos
-Communication of breaking changes - major platform updates | Nikhil
-How do we maintain high quality? | Nikhil
-How to encourage external contribution? |
+Cordova Workflow for Contributors (How do I debug a platform/plugin issue?) | Joe, Carlos
 
 
 ### Plugin Ecosystem
@@ -53,12 +49,8 @@ How to encourage external contribution? |
 Topic | Attendee
 ------|---------
 How to influence quality improvements for Cordova plugins? |
-Documenting platforms APIs for plugins |
 Cocoapods as dependencies in plugin.xml same way as gradle | Carlos
-TACO Kits - validated plugins, How to have a slower and safer adoption on upgrades | Carlos
-Versioning Hell - Which plugin works with which platform? How should I upgrade my Cordova project? | Nikhil
-What can we learn from the React Native plugin API? NativeScript API? |
-Tips and Documentation for Debugging Cordova Plugins |
+Versioning Hell (TACO Kits?) - Which plugin works with which platform? How should I upgrade my Cordova project? | Nikhil & Carlos
 CPR end of life discussion | Steve
 
 
@@ -73,19 +65,14 @@ PlatformApi refactoring |
 Standardized logging and error/progress reporting |
 Plugin dependencies Installation | Omar Mefire
 
+## Day Two Topics
 
-### Hybrid Apps & Native Development
+Start with Demos
 
-Topic | Attendee
-------|---------
-What is needed to allow customizing native (Xcode/Gradle/...) projects when using the CLI? |
-Is the distinction between the CLI vs. platform-centered workflow still valid? |
-Supporting multiple web views (e.g. for native navigation + web content scenarios) |
-Can we share tools or plugins with React Native? |
-Allow per-platform ids? |
+### Documenation (1 hour)
+Docs/Communication (Where do we need to focus first?) | Nikhil
 
-
-### CI & Testing
+### CI & Testing (1 hour)
 
 Topic | Attendee
 ------|----------
@@ -95,11 +82,22 @@ Future steps for our CI Software | Everyone.
 Future steps for our CI Hardware | Everyone.
 Future steps for testing | Everyone, definitely.
 
+(lunch)
+
+### Hybrid Apps & Native Development
+
+Topic | Attendee
+------|---------
+What can we learn from the React Native plugin API? NativeScript API? | Parashu
+What is needed to allow customizing native (Xcode/Gradle/...) projects when using the CLI? | Martin
+Can we share tools or plugins with React Native? | Parashu & Martin
+Allow per-platform ids? | Martin
 
 ### Others
 
 Topic | Attendee
 ------|---------
+Supporting multiple web views (e.g. for native navigation + web content scenarios) |
 2 Modes, Production vs. Dev to support ES6, Typescript, www-dist | Carlos
 A new inAppBrowser for iOS based on SafariViewController | Carlos
 Cordova Desktop Browser - Electron JS + Emulation/Ripple | Carlos
