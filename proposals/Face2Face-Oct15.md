@@ -71,6 +71,7 @@ What belongs in Cordova and what should be left to downstream tools? |
 What do integrators need from Cordova? |
 PlatformApi refactoring |
 Standardized logging and error/progress reporting |
+Plugin dependencies Installation | Omar Mefire
 
 
 ### Hybrid Apps & Native Development
