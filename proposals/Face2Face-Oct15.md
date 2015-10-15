@@ -54,6 +54,24 @@ Versioning Hell (TACO Kits?) - Which plugin works with which platform? How shoul
 CPR end of life discussion | Steve
 
 
+### CI & Testing (1 hour)
+
+Topic | Attendee
+------|----------
+Current state of CI and testing | Everyone, right?
+Why aren't we looking at the CI? | Everyone, yes.
+Future steps for our CI Software | Everyone.
+Future steps for our CI Hardware | Everyone.
+Future steps for testing | Everyone, definitely. 
+
+
+## Day Two Topics
+
+Start with Demos
+
+(lunch)
+
+
 ### Downstream Tooling ideas
 
 Topic | Attendee
@@ -65,24 +83,8 @@ PlatformApi refactoring |
 Standardized logging and error/progress reporting |
 Plugin dependencies Installation | Omar Mefire
 
-## Day Two Topics
-
-Start with Demos
-
 ### Documenation (1 hour)
 Docs/Communication (Where do we need to focus first?) | Nikhil
-
-### CI & Testing (1 hour)
-
-Topic | Attendee
-------|----------
-Current state of CI and testing | Everyone, right?
-Why aren't we looking at the CI? | Everyone, yes.
-Future steps for our CI Software | Everyone.
-Future steps for our CI Hardware | Everyone.
-Future steps for testing | Everyone, definitely.
-
-(lunch)
 
 ### Hybrid Apps & Native Development
 
