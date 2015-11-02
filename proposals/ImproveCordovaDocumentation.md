@@ -8,24 +8,24 @@ We discussed and came up with few guidelines and possible solutions for these pr
 - Incorrectness
 	- Outdated Stuff
 	- Docs don’t reflect changes in plugin versions
-	Action Items:
-	- Document Scrub: Get rid of outdated/duplicate content
-	- Pin guides to specific versions
-	- Add comments to docs so that people may comment if they find any inconsistency
-	- Write a blog post summarizing all the survey results
+	- Action Items:
+		- Document Scrub: Get rid of outdated/duplicate content
+		- Pin guides to specific versions
+		- Add comments to docs so that people may comment if they find any inconsistency
+		- Write a blog post summarizing all the survey results
 
 - Docs are hard to find
 	- Organization on the website needs to be simplified
-	Action Items:
-	- Add FAQ section to the website
-	- Work on SEO of docs and website
-	- Draft a proposal to re-organize content on the website
+	- Action Items:
+		- Add FAQ section to the website
+		- Work on SEO of docs and website
+		- Draft a proposal to re-organize content on the website
 
 - Plugin docs are all over the place
-	Action Items:
-	- Pull core plugin docs from github along with centralized docs
-	- Define a consistent structure for plugin docs
-	- Show docs preview on plugin search
+	- Action Items:
+		- Pull core plugin docs from github along with centralized docs
+		- Define a consistent structure for plugin docs
+		- Show docs preview on plugin search
 
 - Tutorials needed
 	- Basic app/plugin/platform development
@@ -40,8 +40,8 @@ We discussed and came up with few guidelines and possible solutions for these pr
 	- Plugin docs are usually very limited
 	- Advanced usage/Core understanding docs are absent
 	- Docs are difficult to apprehend for beginners
-	Action Items:
-	- Write new articles for advanced usage and understanding of Cordova core: understand the working of cli commands, tasks and order of execution of build/run/prepare commands, understanding native bridges
-	- Include sample apps on our website
-	- Go through stackoverflow and find common problems and incorporate docs accordingly
-	- General guidelines to write/review docs
+	- Action Items:
+		- Write new articles for advanced usage and understanding of Cordova core: understand the working of cli commands, tasks and order of execution of build/run/prepare commands, understanding native bridges
+		- Include sample apps on our website
+		- Go through stackoverflow and find common problems and incorporate docs accordingly
+		- General guidelines to write/review docs
