@@ -1,4 +1,4 @@
-# Removal of Cordova iOS Native Whitelist
+# Proposal to Remove the Cordova iOS Native Whitelist
 
 This proposal is to advocate for the removal of the usage of the cordova-plugin-whitelist plugin in cordova-ios-4.x.
 
