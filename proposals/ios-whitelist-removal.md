@@ -26,6 +26,7 @@ It seems that this code was added to provide a generic way to allow whitelist as
 ![proposed cordova-ios-4 whitelist](images/ios-whitelist-removal/cordova-ios-4-whitelist-proposed.png)
 
 The proposed whitelist system here requires us to remove:
+
 1. The [iteration of plugins](https://github.com/apache/cordova-ios/blob/0ec2949d9b37495da6504867bfb371bd868242f0/CordovaLib/Classes/Public/CDVViewController.m#L518) to see if they conform to the [protocol methods](https://github.com/apache/cordova-ios/blob/master/CordovaLib/Classes/Public/CDVURLRequestFilter.h)
 2. Usage of the [cordova-plugin-whitelist](https://github.com/apache/cordova-plugin-whitelist) itself
 
