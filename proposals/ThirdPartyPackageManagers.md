@@ -22,7 +22,7 @@ Proposed support is through the existing `<engine>` and `<framework>` tags.
 <framework src="path/to/mynu.nuspec" type="nuspec" />
 ```
 
-The above use [existing documented attributes](https://cordova.apache.org/docs/en/5.1.1/plugin_ref/spec.html) for both the <engine> and <framework> tags.
+The above use [existing documented attributes](https://cordova.apache.org/docs/en/5.1.1/plugin_ref/spec.html) for both the `<engine>` and `<framework>` tags.
 
 ## Engine tag
 
