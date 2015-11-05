@@ -32,10 +32,6 @@ The proposed whitelist system here requires us to remove:
 
 This simplifies things in that we rely solely on iOS to handle security functionality -- Apple is a far better expert than us to handle these things.
 
-Developers still have to specify `<access>` tags to whitelist domains when they are whitelisted to in the `CSP` however.
+Developers still have to specify `<access>` tags to whitelist domains when they are whitelisted to in the `CSP` however, but this only applies to `iOS 9` and above. `<access>` tags are converted to `ATS` directives in the app's `Info.plist` by the `cordova-cli` and this functionality is only applicable for `iOS 9` and above. For `iOS 8` and below, the `<access>` tags have no effect. Thus, the adoption of this proposal basically removes all whitelist functionality for iOS versions 8 and below.
 
 An automatic `CSP to <access> tag` parser was proposed (through `cordova-lib` ios parser) -- this could work but at an expense of backwards-compatibility.
-
-Note however that adoption of this proposal basically removes all whitelist functionality for iOS versions 8 and below.
-
-
