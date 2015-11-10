@@ -19,5 +19,5 @@ hooks, the default hooks with readme is created
 www/, is missing the default is created from cordoba-app-hello-world
 
 References:
-[JIRA CB-9964](https://issues.apache.org/jira/browse/CB-9964)
-[Discussion](https://github.com/cordova/cordova-discuss/issues/5)
+- [JIRA CB-9964](https://issues.apache.org/jira/browse/CB-9964)
+- [Discussion](https://github.com/cordova/cordova-discuss/issues/5)
