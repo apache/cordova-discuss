@@ -4,7 +4,7 @@
 
 This proposal is to update the Cordova CLI to support the argument --template for create command
 
-    $cordova craete myApp --template=<NPM ID | GIT URL | Local Path>
+    $cordova create myApp --template=<NPM ID | GIT URL | Local Path>
 
 - NPM ID is a npm package name with optional version
 - GIT ULR is a git url, similar format as adding platforms and plugins via Git
