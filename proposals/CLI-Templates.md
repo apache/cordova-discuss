@@ -18,6 +18,9 @@ config.xml a default one is created  from cordoba-app-hello-world
 hooks, the default hooks with readme is created
 www/, is missing the default is created from cordoba-app-hello-world
 
-References:
+### References:
 - [JIRA CB-9964](https://issues.apache.org/jira/browse/CB-9964)
 - [Discussion](https://github.com/cordova/cordova-discuss/issues/5)
+- [Lib PR] (https://github.com/apache/cordova-lib/pull/339)
+- [CLI PR] (https://github.com/apache/cordova-cli/pull/226)
+
