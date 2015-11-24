@@ -12,7 +12,7 @@ The user specified version will always trump the pinned `cordova-lib` plugin ver
 
 I plan on pinning the plugins in the `package.json` of `cordova-lib`.
 
-    {
+    'cordovaPlugins' : {
     'cordova-plugin-file':'~3.0.0',
     'cordova-plugin-device':'~1.0.0'
     }
