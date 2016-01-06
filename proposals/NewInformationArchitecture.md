@@ -42,7 +42,7 @@ This is the proposed new IA:
 - Reference
 	- Config.xml
 	- Events
-	- Plugins
+	- Plugin APIs
 	- CLI
 	- Hooks
 	- Plugin.xml
