@@ -25,7 +25,7 @@ cordovaDependencies:
 
 #### `<plugin-version>` allowed values
 * Single version (e.g. `1.0.0`)
-* Upper Bound (e.g. `<2.0.0`). This is for BIG breaking changes. For example, if we made a change to some platform that breaks compatibility with all earlier versions of a plugin, we would use this tag to retroactively update their mappings. It won't override earlier tags, just add to them. This is sugar; we could leave it out if we want to keep things simple
+* Upper Bound (e.g. `<2.0.0`). This is for BIG breaking changes. For example, if we made a change to some platform that breaks compatibility with all earlier versions of a plugin, we would use this tag to retroactively update their mappings. It won't override earlier tags, just add to them. See [3] for a clarification of this behavior. This is sugar; we could leave it out if we want to keep things simple
 
 #### `<constraint>` allowed values:
 * `cordova`
@@ -38,9 +38,9 @@ cordovaDependencies:
 
 Essentially, this compiles the plugin.xml `<engine>` tags for each version of a plugin into one handy list in package.json. Each entry in the object needs to only specify the platform versions it cares about, just like the engine tag. We can also add support for plugin dependency versions (as in the plugin.xml's `<dependency>` tag).
 
-When the user runs `cordova plugin add <plugin-package-name>`, the CLI will check the plugin versions in descending order to examine each "engine" entry and determine if the current project can support that plugin version. It will then try and fetch the highest compatible plugin version (see [1] and [2] for high level pseudocode). The CLI must clearly indicate why the user is not getting the latest version of a plugin if it is not compatible with the current project. This can take the form of listing the engine information for the latest plugin version in some human readable way.
+When the user runs `cordova plugin add <plugin-package-name>`, the CLI will check the plugin versions in descending order to examine each constraint entry and determine if the current project can support that plugin version. It will then try and fetch the highest compatible plugin version (see [1] and [2] for high level pseudocode). The CLI must clearly indicate why the user is not getting the latest version of a plugin if it is not compatible with the current project. This can take the form of listing the project requirements for the latest plugin version in some human readable way.
 
-If a plugin version's engine information is not specified, the CLI will use the engine information for the next version down. For example, consider the following entry:
+If a plugin version's project requirements information is not specified, the CLI will use the project requirements information for the next version down. For example, consider the following entry:
 
 ```
 cordovaDependencies: {
@@ -49,7 +49,7 @@ cordovaDependencies: {
 }
 ```
 
-Here, we have specified the project requirements of two versions of a plugin (0.0.1 and 1.0.0). All versions of the plugin between 0.0.1 and 1.0.0 are assumed to have the engine information that is specified in the 0.0.1 entry. If the current project satisfies the 0.0.1 engine information, then we get the highest version of the plugin that is greater than or equal to 0.0.1 and less than 1.0.0. This helps us to reduce the size of the mapping if the project requirements don't change across multiple releases.
+Here, we have specified the project requirements of two versions of a plugin (0.0.1 and 1.0.0). All versions of the plugin between 0.0.1 and 1.0.0 are assumed to have the requirements as those specified in the 0.0.1 entry. If the current project satisfies the 0.0.1 project requirements, then we get the highest version of the plugin that is greater than or equal to 0.0.1 and less than 1.0.0. This helps us to reduce the size of the mapping if the project requirements don't change across multiple releases.
 
 Fetching should always fall back to the current behavior (fetching latest/pinned plugin versions) if there are no versions of the plugin that the project supports. This is to make sure that if some plugin developer neglects their plugin mapping, their plugin does not become impossible to install without giving a specific version. However, in this case the CLI will deliver a stern warning that the project might not build and explain what project requirements were not satisfied.
 
@@ -94,7 +94,7 @@ Else:
 
 ##### [2] Logic for determining if a plugin version's constraint mapping is satisfied
 ```
-First, add all applicable upper range constraints to this plugin version's constraint mapping (see <plugin-version> allowed values above)
+First, AND together all applicable upper range constraints for this plugin version's constraint mapping (see [3])
 
 If Cordova version is constrained and installed version does not satisfy semver constraint:
     return NotSatisfied
@@ -109,4 +109,22 @@ Else:
             Continue
 
     Return Satisfied
+```
+
+#### [3] Example for Upper Bound Logic
+
+Consider this mapping:
+
+```
+cordovaDependencies: {
+    "0.0.1": { cordova-ios: ">1.0.0" },
+    "<1.0.0": { cordova-ios: "<2.0.0" },
+    "<2.0.0": { cordova-ios: "<5.0.0" }
+}
+```
+
+Here we specify one plugin version (0.0.1) and two upper bounds (<1.0.0 and <2.0.0) that constrain cordova-ios. The two upper bounds do not override the constraint of 0.0.1, they are combined via AND at evaluation time. When we go to check the cordova-ios version of the project, the constraint we will evaluate for plugin version 0.0.1 will be the combination of these three:
+
+```
+    >1.0.0 AND <1.0.0 AND <5.0.0
 ```
