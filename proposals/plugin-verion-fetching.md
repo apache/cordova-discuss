@@ -126,5 +126,5 @@ cordovaDependencies: {
 Here we specify one plugin version (0.0.1) and two upper bounds (<1.0.0 and <2.0.0) that constrain cordova-ios. The two upper bounds do not override the constraint of 0.0.1, they are combined via AND at evaluation time. When we go to check the cordova-ios version of the project, the constraint we will evaluate for plugin version 0.0.1 will be the combination of these three:
 
 ```
-    >1.0.0 AND <1.0.0 AND <5.0.0
+    >1.0.0 AND <2.0.0 AND <5.0.0
 ```
