@@ -53,3 +53,8 @@ This is the proposed new IA:
 We also did a document scrub and tried to figure out the articles which need to be modified or updated with the current information and plan to work on them. Some of these needs to be converted into proper reference as seen in the IA.
 
 Please give feedback or let us know if you would like to help with this task.
+
+Jira tasks for bringing the new IA up and improving the existing content can be found here:
+https://issues.apache.org/jira/browse/CB-10354?jql=labels%20%3D%20Docs-6.x
+
+If anyone wants to help out, please feel free to assign any of the tasks to yourself. I have added the changes we felt needed in the description of the tasks and also general guidelines for overall content of the articles.
