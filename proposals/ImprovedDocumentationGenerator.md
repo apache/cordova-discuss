@@ -40,7 +40,7 @@ The following features must be supported by the Cordova docs.
     </dd>
     <dt>analytics</dt>
     <dd>
-        Can have analytics to the docs website.
+        Can have analytics for the docs website.
     </dd>
 </dl>
 
