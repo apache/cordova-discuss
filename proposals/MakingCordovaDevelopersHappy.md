@@ -159,7 +159,9 @@ I know that the list below is long and doesn't have many details.  I could write
 
     **Recommendation 27:** Develop more automated tests on complex apps, rather than just simple tests.
 
-20. Cordova development cycle times: The overall Cordova development operation comes across as Cordova contributors writing good code, even fantastic code, but not supporting it or delivering what Cordova app developers need.  Yep, new features and bug fixes are being churned out in a very fast manner (the “train” as I have seen it called), but as the features have increased, the number of regression bugs have increased.  Recommendation 28: Slow down the pace of releases.  
+20. Cordova development cycle times: The overall Cordova development operation comes across as Cordova contributors writing good code, even fantastic code, but not supporting it or delivering what Cordova app developers need.  Yep, new features and bug fixes are being churned out in a very fast manner (the “train” as I have seen it called), but as the features have increased, the number of regression bugs have increased.  
+
+    **Recommendation 28:** Slow down the pace of releases.  
 
     **Recommendation 29:** Spend more time performing integration testing before publishing a new release.  
 
