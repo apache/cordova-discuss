@@ -15,7 +15,7 @@ For adding new proposals and ideas, please review instructions [here](proposals/
 ## Completed Proposals
 | Proposal | Status/Notes
 |----------|-------------------
-| [Templates in Cordova CLI](proposals/CLI-Templates.md)
+| [Templates in Cordova CLI](proposals/CLI-Templates.md) | Completed |
 | [Cordova platform API](cordova-lib refactoring\Cordova-lib refactoring proposal.md) | Completed | 
 | [Cordova Face2Face Oct 2015 meeting](proposals/Face2Face-Oct15.md) | Meeting held Oct 15 - completed |
 | [Automatic Generation of plugin API docs](proposals/ImprovedDocumentationGenerator.md) | Completed only for cordova-plugin-camera |
