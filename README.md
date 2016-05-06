@@ -9,7 +9,7 @@ For adding new proposals and ideas, please review instructions [here](proposals/
 | Proposal | Status/Notes
 |----------|-------------------
 | [Support for Android N](proposals/android-n-support.md) | Proposed - Ongoing 
-| Ideas for improving documentation [[1]](proposals/ImprovedDocumentation.md) [[2]]((proposals/ImproveCordovaDocumentation.md) | Most of the recommendations completed | 
+| Ideas for improving documentation [[1]](proposals/ImprovedDocumentation.md) [[2]](proposals/ImproveCordovaDocumentation.md) | Most of the recommendations completed | 
 | [Support for third party package managers - Nuget & coccoapods](proposals/ThirdPartyPackageManagers.md) | Help needed |
 
 ## Completed Proposals
