@@ -46,6 +46,11 @@ Users shall be shown a timed prompt (with a link to a privacy notice) the first 
 If the prompt times out with the user having not provided any answer,
 it will be assumed they do not agree to telemetry being collected.
 
+### No Telemetry Flag
+Users might opt out of telemetry on a command basis by using the ```--no-telemetry``` flag.
+That way, they have the ability to enable telemetry and yet still disable it for specific commands as they see fit.
+e.g: ```cordova run ios --no-telemetry```
+
 ### Continuous Integration environments
 In CI environments, there will be a way to disable the telemetry prompt on first usage by setting an environment variable.
 In case the environment variable is not set, the command invoked will wait for a few seconds, then proceed. This should ensure existing tools that make use of
