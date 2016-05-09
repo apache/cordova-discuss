@@ -12,6 +12,11 @@ For adding new proposals and ideas, please review instructions [here](proposals/
 | Ideas for improving documentation [[1]](proposals/ImprovedDocumentation.md) [[2]](proposals/ImproveCordovaDocumentation.md) | Most of the recommendations completed | 
 | [Support for third party package managers - Nuget & coccoapods](proposals/ThirdPartyPackageManagers.md) | Help needed |
 
+### In Progress Proposals
+| Proposal | Status/Notes
+|----------|-------------------
+| [Add Telemetry to Cordova CLI](proposals/Telemetry.md) | In Progress
+
 ## Completed Proposals
 | Proposal | Status/Notes
 |----------|-------------------
