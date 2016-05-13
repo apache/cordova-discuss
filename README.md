@@ -14,13 +14,13 @@ For adding new proposals and ideas, please review instructions [here](proposals/
 ## In Progress Proposals
 | Proposal | Status/Notes
 |----------|-------------------
-| [Nightly Builds for Cordova and platforms](https://github.com/cordova/cordova-discuss/pull/47) | Proposed |
 | [Templates in Cordova CLI Part 2](https://github.com/cordova/cordova-discuss/pull/49) | Proposed |
 
 
 ## Completed Proposals
 | Proposal | Status/Notes
 |----------|-------------------
+| [Nightly Builds for Cordova and platforms](proposals/NightlyBuilds.md) | Completed |
 | [Templates in Cordova CLI](proposals/CLI-Templates.md) | Completed |
 | [Cordova platform API](cordova-lib refactoring\Cordova-lib refactoring proposal.md) | Completed |
 | [Cordova Face2Face Oct 2015 meeting](proposals/Face2Face-Oct15.md) | Meeting held Oct 15 - completed |
