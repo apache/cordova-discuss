@@ -1,4 +1,5 @@
 # Third-party Package Manager Support For Plugins 
+- Status: Proposed
 
 Corresponding mailing list discussion [is here](http://markmail.org/message/5qvg6rwr4nz4q7mc).
 

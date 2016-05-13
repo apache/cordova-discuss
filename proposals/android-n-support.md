@@ -1,4 +1,5 @@
 # Android N and Cordova
+- Status: Proposed
 
 The purpose of this discuss is to highlight the new features of Android N
 that may affect Cordova. I did a brief investigation of the upcoming changes
@@ -39,8 +40,6 @@ that any Activity spawned by a multi-window supporting activity also supports
 multi-window, so you could potentially get into a weird state where you add a plugin
 that does not support it and it causes problems. It's something to be aware of.
 Developers can also disable multi-window support by editing AndroidManifest.xml.
-
-
 
 [android-n-query]: https://issues.apache.org/jira/issues/?jql=project%20%3D%20CB%20AND%20status%20in%20(Open%2C%20%22In%20Progress%22%2C%20Reopened)%20AND%20labels%20%3D%20AndroidN
 [other-behavior-changes]: http://developer.android.com/preview/behavior-changes.html#other

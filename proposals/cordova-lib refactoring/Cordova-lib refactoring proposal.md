@@ -1,3 +1,7 @@
+
+# Cordova-lib Refactoring proposal
+Status: Completed
+
 The proposal describes the way how we can improve current cordova lib design and interaction between cordova lib and platforms. The document contains high-level descriptions of proposed interfaces only. Fo more details on methods signatures see *.js files in this pull request.
 
 The most important points of this proposal are:

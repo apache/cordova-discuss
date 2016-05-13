@@ -1,4 +1,5 @@
 # Plugin Version Fetching Proposal
+- Status: Completed. Ideas incorporated in cordova-lib refactoring proposal
 
 ## Overview
 

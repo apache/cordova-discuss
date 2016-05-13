@@ -9,13 +9,12 @@ For adding new proposals and ideas, please review instructions [here](proposals/
 | Proposal | Status/Notes
 |----------|-------------------
 | [Support for Android N](proposals/android-n-support.md) | Proposed - Ongoing 
-| Ideas for improving documentation [[1]](proposals/ImprovedDocumentation.md) [[2]](proposals/ImproveCordovaDocumentation.md) | Most of the recommendations completed | 
-| [Support for third party package managers - Nuget & coccoapods](proposals/ThirdPartyPackageManagers.md) | Help needed |
+| [Support for third party package managers - Nuget & coccoapods](proposals/ThirdPartyPackageManagers.md) | Proposed |
 
 ## In Progress Proposals
 | Proposal | Status/Notes
 |----------|-------------------
-| [Add Telemetry to Cordova CLI](proposals/Telemetry.md) | In Progress
+
 
 ## Completed Proposals
 | Proposal | Status/Notes
@@ -29,4 +28,7 @@ For adding new proposals and ideas, please review instructions [here](proposals/
 | [Platform project](proposals/PlatformProject.md) | Some ideas adopted into the Cordova Platform API work.
 | [Plugin version fetching - improve plugin versioning story](proposals/plugin-version-fetching.md) | Completed & part of Cordova 6.1
 | [New information architecture for Cordova](proposals/NewInformationArchitecture.md) | Completed and live on docs.cordova.io.
+| [Add Telemetry to Cordova CLI](proposals/Telemetry.md) | In Progress
+| Ideas for improving documentation [[1]](proposals/ImprovedDocumentation.md) [[2]](proposals/ImproveCordovaDocumentation.md) | Most of the recommendations completed | 
+
 

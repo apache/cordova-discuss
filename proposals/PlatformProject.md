@@ -1,4 +1,5 @@
 # PlatformProject and platform specific code refactoring for cordova-lib
+- Status: Abandoned
 
 This is based on the [PlatformProject](https://github.com/kamrik/CordovaPlatformProject) experiment 
 discussed during the last Cordova hangout and described in this 

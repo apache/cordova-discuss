@@ -1,4 +1,5 @@
 # Cordova Face To Face Meeting
+- Status: Completed
 
  | |
 --- | --- | ---

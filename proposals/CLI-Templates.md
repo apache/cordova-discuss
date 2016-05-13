@@ -1,6 +1,5 @@
-## Cordova CLI Create with Template argument
-
-
+# Cordova CLI Create with Template argument
+- Status: Completed
 
 This proposal is to update the Cordova CLI to support the argument --template for create command
 

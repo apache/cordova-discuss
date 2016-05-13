@@ -1,4 +1,5 @@
 ### New Information Architecture for Cordova Website
+- Status: Completed
 
 As a part of the task of improving the Cordova documentation, we came up with a new Information Architecture for the website. The current architecture was not very comprehensive and lacked a well-defined structure which made the documentation difficult to follow and find for people. Also we decided to add some new content based on the customer feedback from our website survey.
 

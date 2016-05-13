@@ -1,5 +1,6 @@
 Doc System Improvement Proposal
 ===============================
+- Status: Completed
 
 ## Motivation
 

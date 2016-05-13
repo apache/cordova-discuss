@@ -1,4 +1,5 @@
 # Telemetry Proposal
+- Status: Completed
 
 Currently, we have no definitive way of answering the following questions:
 - What features of Cordova are used and how often are they used ?

@@ -1,4 +1,5 @@
 ### Improving Cordova Documentation
+- Status: Completed
 
 For the last few weeks, we have taken measures to get in touch with and understand the experiences of a Cordova user. We put up a survey which received > 900 responses and tried to understand the pain points of working with Cordova. As it was brought up in F2F as well, majority of the users (~100 survey responses) think that the Cordova documentation isn’t up to the mark and is the biggest problem they face. We went through the responses and have summarized them. 
 

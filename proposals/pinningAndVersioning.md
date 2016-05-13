@@ -1,4 +1,5 @@
 # Pinning and Versioning
+- Status: Completed
 
 ## Pinning Plugins
 
