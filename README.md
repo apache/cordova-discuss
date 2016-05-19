@@ -29,6 +29,7 @@ For adding new proposals and ideas, please review instructions [here](proposals/
 | [Plugin version fetching - improve plugin versioning story](proposals/plugin-version-fetching.md) | Completed & part of Cordova 6.1
 | [New information architecture for Cordova](proposals/NewInformationArchitecture.md) | Completed and live on docs.cordova.io.
 | [Add Telemetry to Cordova CLI](proposals/Telemetry.md) | In Progress
-| Ideas for improving documentation [[1]](proposals/ImprovedDocumentation.md) [[2]](proposals/ImproveCordovaDocumentation.md) | Most of the recommendations completed | 
+| Ideas for improving documentation [[1]](proposals/ImprovedDocumentation.md) [[2]](proposals/ImproveCordovaDocumentation.md) | Most of the recommendations completed |
+| [CI for PRs submitted for cordova plugins](proposals/ci-for-plugin-prs.md) | Completed 
 
 
