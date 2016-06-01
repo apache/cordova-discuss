@@ -19,7 +19,7 @@ Proposed support is through the existing `<engine>` and `<framework>` tags.
     <engine name="nuget" version=">=3.2" platform="windows" />
 </engines>
 
-<framework src="path/to/mypod.podspec" type="podspec" spec="~> 1.1.2"/>
+<framework src="name_of_cocoapod" type="podspec" spec="~> 1.1.2"/>
 <framework src="path/to/mynu.nuspec" type="nuspec" />
 ```
 
