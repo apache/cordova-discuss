@@ -32,10 +32,11 @@ Currently, platforms and templates are cached at `~/.cordova/lib/npm_cache/PACKA
 
 * Create a new module named `cordova-fetch`. Fetches from npm and git. 
 * Start using system installed `npm` instead of packaging our own `npm` in `cordoba-lib`. We already check for `git` being installed, we should do the same for `npm`. We would use  `superspawn` to shell out to the system `npm`.
-* Stop using `.cordova/npm_cache/`. Modules instead get fetched to root `node_modules` directory in your applications
+* Stop using `.cordova/lib/npm_cache/`. Modules instead get fetched to root `node_modules` directory in your applications
 * Add new `--fetch` flag to `cordova` and `plugman` to use `cordova-fetch` over existing fetching methods
 * Plugin/platform removal should run `npm uninstall` on your cordova projects to remove the module from the apps `node_modules` directory.
 * if a `package.json` exists, adding `--save` will also add the dependency to `package.json` (as well as to `config.xml`). This won't be used until a future update is made to move save functionality from `config.xml` to `package.json`. Just adding it now for future proofing.
+* Add `--fetch` flag to `cordova create APPID --template TEMPLATEID/GITURL` to use cordova-fetch when getting the template. The template is fetched to `.cordova/node_modules/` directory and the appropriate files are added. 
 
 ### New Requirements
 
@@ -49,4 +50,9 @@ Currently, platforms and templates are cached at `~/.cordova/lib/npm_cache/PACKA
 
 ### Future goals
 
-* add a package.json to cordova projects, update `cordova` to start using `package.json` instead of `config.xml`. This requires moving over a lot of properties we currently parse in `config.xml` and updating tools to look in `package.json` before checking `config.xml`.
+* add a package.json to cordova projects, update `cordova` to start using `package.json` as well as `config.xml`. This requires moving over some functionality from `config.xml` and updating tools to look in `package.json` before checking `config.xml`.
+
+### Links
+Issues: https://issues.apache.org/jira/browse/CB-9858 & https://issues.apache.org/jira/browse/CB-11349
+
+
