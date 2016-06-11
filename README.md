@@ -15,6 +15,7 @@ For adding new proposals and ideas, please review instructions [here](proposals/
 | Proposal | Status/Notes
 |----------|-------------------
 | [Nightly Builds for Cordova and platforms](https://github.com/cordova/cordova-discuss/pull/47) | Proposed |
+| [Templates in Cordova CLI Part 2](https://github.com/cordova/cordova-discuss/pull/49) | Proposed |
 
 
 ## Completed Proposals
@@ -32,5 +33,6 @@ For adding new proposals and ideas, please review instructions [here](proposals/
 | [Add Telemetry to Cordova CLI](proposals/Telemetry.md) | In Progress
 | Ideas for improving documentation [[1]](proposals/ImprovedDocumentation.md) [[2]](proposals/ImproveCordovaDocumentation.md) | Most of the recommendations completed |
 | [CI for PRs submitted for cordova plugins](proposals/ci-for-plugin-prs.md) | Completed
+| [Unified cordova-fetch proposal](https://github.com/cordova/cordova-discuss/blob/master/proposals/fetching.md) | Completed
 
 

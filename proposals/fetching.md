@@ -1,4 +1,5 @@
 # Unified Cordova Fetching Proposal
+- Status: Completed
 
 ### Current
 
