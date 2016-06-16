@@ -19,7 +19,7 @@ Proposed support is through the existing `<engine>` and `<framework>` tags.
     <engine name="nuget" version=">=3.2" platform="windows" />
 </engines>
 
-<framework src="path/to/mypod.podspec" type="podspec" />
+<framework src="name_of_cocoapod" type="podspec" spec="~> 1.1.2"/>
 <framework src="path/to/mynu.nuspec" type="nuspec" />
 ```
 
@@ -32,3 +32,14 @@ The `name` attribute would specify the command-line package manager to be used, 
 ## Framework Tag
 
 The `src` attribute can be a relative path or a URL. The `type` attribute specifies the type of framework that corresponds to the `engine` supported. In this case type `podspec` means that the lib should be installed using the `cocoapods` package manager, and `nuspec` for the `nuget` package manager.
+
+## Spec Argument
+
+The `spec` arugment will specify the version of the CocoaPod that is to be used. `~>` is CocoaPod's optimistic operator-- copied from [CocoaPods docs](http://guides.cocoapods.org/using/the-podfile.html): 
+  - '~> 0.1.2' Version 0.1.2 and the versions up to 0.2, not including 0.2 and higher
+  - '~> 0.1' Version 0.1 and the versions up to 1.0, not including 1.0 and higher
+Cocoapods also support logical operators:
+  - '> 0.1' Any version higher than 0.1
+  - '>= 0.1' Version 0.1 and any higher version
+
+The string passed in the `spec` argument will be pasted into the Podfile.  
