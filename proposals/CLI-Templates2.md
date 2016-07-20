@@ -1,6 +1,6 @@
 # CLI templates Part 2 Proposal
 
-status - proposed
+status - Completed
 
 ## Overview
 
@@ -39,9 +39,12 @@ Example:
 
 Currently, package.json's version defaults to `1.0.0`. `config.xml` version seems to start at `0.0.1`. Probably a good idea to update our templates to set the initial version in `config.xml` to 1.0.0 instead. 
 
-### Future Work
+Also:
 
 * create a how to create templates guide for docs. Talk about subdirectory as suggested method, add keyword `cordova:template`.
+
+### Future Work
+
 * create a search similar to plugins.cordova.io for templates based on the keyword.
 
 ## References
