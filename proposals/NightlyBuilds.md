@@ -46,7 +46,4 @@ The work is currently in progress and the following items are completed:
 3. Patches for `cordova-cli` and `cordova-lib` that fixes some tests that were failing when were running on nightly builds
 4. Support for [building arbitrary repos](https://github.com/apache/cordova-coho/pull/122) has been added.
 5. Support for [building nightlies for platforms](https://github.com/apache/cordova-coho/pull/124) has been added.
-
-## Next steps
-
-- [] Update cordova to print necessary warnings and information about nightly versions of dependencies and platforms when running `cordova --version` and `cordova platform ls`
+6. Updated cordova to print necessary warnings and information about nightly versions of dependencies and platforms when running `cordova --version` and `cordova platform ls`
