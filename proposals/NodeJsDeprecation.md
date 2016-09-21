@@ -12,7 +12,7 @@ Also, on **Oct 1st 2016**, the **default** `node` version that people download o
 
 ## Proposed Timeline
 
-**Oct 1st 2016** - deprecate use of `node 0.x`. Make sure all AppVeyor/Travis CI builds still test using `node 0.x` as well as `node 6.x`
+**Oct 1st 2016** - deprecate use of `node 0.x`. Make sure all AppVeyor/Travis CI builds still test using `node 0.x` as well as `node 6.x`. Add a requirements check that will print out a deprecation notice if they are using a node < 6, and telling them to upgrade to a minimum of 6.
 
 **Jan 1st 2017** - Make sure all AppVeyor/Travis CI builds only test for `node 6.x`. Safe to use ES6 and ES7 features in Apache Cordova. Tools and platforms will have to bump a major version.
 
