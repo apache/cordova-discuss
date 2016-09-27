@@ -78,3 +78,9 @@ The reason for this change is to add `package.json` in a standard cordova app an
 ### Links
 
 * Issues + KANBANBOARD will follow after discussion
+
+### Motivation
+
+1) Remove technical debt. We would remove a bunch of code in regards to managing our depenendencies and instead rely on **npm** to do the work.
+2) Update to a more modern/expected system for users to manage their dependencies
+3) We are going to add a `package.json`. Having a `package.json` may also encourage users to use other node modules in their development.
