@@ -1,5 +1,5 @@
 # Deprecation of node.js 0.x and upgrade to a minimum usage of node.js 4.x in Apache Cordova 
-- Status: Proposed
+- Status: Completed
 
 Right now, all the platforms and plugins require a minimum of `node 0.10` to be installed. `node 0.10` has been out of LTS [1] for a while now, and its maintenance period (security bug fixes) **stops on Oct 2016**. `node 0.12` will be out of maintenance **Jan 1st 2017**.
 
