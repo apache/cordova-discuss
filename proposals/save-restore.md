@@ -35,7 +35,7 @@ Existing save/restore functionality
 
 * Support saving and restoring plugins/platforms in `package.json`. 
 * `config.xml` is used preferences, `package.json` is used for saving & restoring.
-* Introduce a new `cordova` key in `package.json` that stores an array of plugins and an array of platforms that have been saved. The `cordova` key will also store plugin variables, with the key being the plugin name and the value being an object that contains the variable information. The `cordova` key is required for restoring.
+* Introduce a new `cordova` key in `package.json` that stores an array of saved platforms and a plugins object containing saved plugins. The `cordova` key will also store plugin variables, with the key being the plugin name and the value being an object that contains the variable information. The `cordova` key is required for restoring.
 
 Example: 
 ```javascript
@@ -48,9 +48,11 @@ Example:
     //new cordova key
     "cordova": {
         "platforms": ["andoid","ios"],
-        "plugins": ["cordova-plugin-device", "cordova-plugin-facebook4"],
-        //if the plugin has variables, store them
-        "cordova-plugin-facebook4": {"APP_ID":"123456", "APP_NAME":"myApp"}
+        "plugins": {
+          //store plugin variables if present
+          "cordova-plugin-facebook4": {"APP_ID":"123456", "APP_NAME":"myApp"},
+          "cordova-plugin-device": {}
+        }
     }
 ...
 }
