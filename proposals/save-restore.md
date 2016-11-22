@@ -1,5 +1,5 @@
 # Unified Cordova npm save & restore Proposal
-- Status: Proposed
+- Status: In Progress
 
 ## Current
 
@@ -43,7 +43,8 @@ Example:
 ...
     "dependencies": {
         "cordova-plugin-device": "^1.1.3",
-        "cordova-android": "^5.2.2" 
+        "cordova-android": "^5.2.2",
+        "cordova-ios": "https://github.com/apache/cordova-ios"
     },
     //new cordova key
     "cordova": {
@@ -74,15 +75,17 @@ My plan is to add the new save/restore `package.json` logic alongside the existi
 
 ### New Requirements
 
-* Need to create a easy way to migrate `config.xml` saved platforms and plugins into `package.json`. I'm thinking this happens during the restore phase. Alternatively, we could create a new command to do it (`cordova install`).
+* Need to create a easy way to migrate `config.xml` saved platforms and plugins into `package.json`. I'm thinking this happens during the restore phase. Alternatively, we could create a new command to do it (`cordova install`). In the PR, this is done during the restore phase (prepare)
 * Automatically add `package.json` to existing cordova projects which don't have it. This would happen in `prepare`. **cordova@7** feature.
+* After `cordova prepare`, the restore code will make platforms and plugins in `package.json` and `config.xml` match. The two files should contain the same information. In case of conflicts (say between spec or plugin variables), `package.json` wins. 
 
 ### Quirks
 
 * Running `npm install` on your projects will fetch the dependencies in `package.json`, but a `cordova prepare` (restore) will be needed to install them to your cordova project.
 * Running `npm install cordova-plugin-device` will fetch the plugin, but won't install it. `cordova plugin add cordova-plugin-device --save` will still be required. Same goes for platforms. Positive is, the plugin/platform will already be fetched.
 * cordova git subdirectories syntax will not be supported anymore for adding plugins. Ex: http://cordova.apache.org/docs/en/latest/reference/cordova-cli/index.html#plugin-spec
-* Need to decide if we are okay with dependencies being saved as `^4.2.0` in`package.json` vs `~4.2.0` in config.xml. This means we are telling our users it is safe to do minor plugin and platform updates when they have to restore. Our current policy has been to only allow patch updates. I think we are ready for this but lets discuss. We have gotten much better at following semver. 
+* If you add a plugin/platform with the `--save --fetch` flags, the spec will be saved as `^4.2.0` vs `~4.2.0`. This means we are telling our users it is safe to do minor plugin and platform updates when they have to restore. Our current policy has been to only allow patch updates. This is due to us letting npm handle the install under the hood.
+* If you add a plugin/platform with `--fetch` and then later want to restore the platform/plugin, you will have to use the `--fetch` flag. `cordova prepare --fetch`. This is because `--fetch` uses npm under the hood which saves gitURL + fileURL specs differently than how we have traditionally saved them in `config.xml`. If you try to restore platforms/plugins that were added via `--fetch` from gitURLs or fileURLs, and don't use `--fetch`, an error is expected. Original specs from `config.xml` don't have any problems working with `--fetch` for restore. 
 
 ### Future goals
 
@@ -90,7 +93,9 @@ My plan is to add the new save/restore `package.json` logic alongside the existi
 
 ### Links
 
-* Issues + KANBANBOARD will follow after discussion
+* https://issues.apache.org/jira/browse/CB-12001
+* https://issues.apache.org/jira/browse/CB-11960
+* PR: https://github.com/apache/cordova-lib/pull/499
 
 ### Motivation
 
