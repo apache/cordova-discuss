@@ -1,8 +1,16 @@
 # Cordova Plugins
 
-**NOTE**: Data for this proposal was collected on October 28th, 2015. 
+
+
+| Plugin             | Downloads (Oct 2015) | Downloads (Jan 2017) | Open Issues | Open PRs | Recomendation | Notes    |
+| ------------------ | -------------------- | -------------------- | ----------- | -------- | ------------- | -------- | 
+| Battery-Status     | 5116                 | 20,828               | 20          | 8        |               |          | 
+
+
+**NOTE**: Data below was collected on October 28th, 2015. 
 
 ## Battery-Status
+
 * 1 Month Downloads: 5116
 * Open Issues: 18
 * Open Pull Requests: 3
