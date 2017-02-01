@@ -4,7 +4,7 @@ After some long sessions, Simon, Jesse and Steve have come up with some recommen
 * [Downloads](charts/downloads)
 * [Defects & Pull Requests](charts/Issues/Issues+PRs_Jan'17.png)
  
-**NOTE**: Data for this proposal was collected on October 28th, 2015.
+**NOTE**: Data for this proposal was collected on February 1st, 2017 and October 28th, 2015.
  
 
 # Cordova Plugins:
