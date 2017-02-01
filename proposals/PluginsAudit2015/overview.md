@@ -1,8 +1,8 @@
 After some long sessions, Simon, Jesse and Steve have come up with some recommendations on plugins. Please read through and provide feedback on this pull request. Some of these recommendations will need to be broken up into their own proposals. 
 
 * [Audit](audit.md)
-* [Downloads](downloads.png)
-* [Defects & Pull Requests](defectsPRs.png)
+* [Downloads](charts/downloads)
+* [Defects & Pull Requests](charts/Issues/Issues+PRs_Jan'17.png)
  
 **NOTE**: Data for this proposal was collected on October 28th, 2015.
  
