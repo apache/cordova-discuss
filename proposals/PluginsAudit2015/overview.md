@@ -1,10 +1,14 @@
 After some long sessions, Simon, Jesse and Steve have come up with some recommendations on plugins. Please read through and provide feedback on this pull request. Some of these recommendations will need to be broken up into their own proposals. 
 
 * [Audit](audit.md)
-* [Downloads](downloads.png)
-* [Defects & Pull Requests](defectsPRs.png)
+* [Plugin Downloads in Jan'17](charts/downloads/Plugins_Jan'17.png)
+* [Plugin Downloads in 2016](charts/downloads/Plugins_2016.png)
+* [Growth in Plugin Downloads (Oct'15 vs Jan'17)](charts/downloads/Growth_downloads.png)
+* [Plugin Downloads in Oct'15](charts/downloads/downloads.png)
+* [Defects & Pull Requests in Jan'17](charts/Issues/IssuesandPRs.png)
+* [Defects & Pull Requests in Oct'15](charts/Issues/defectsPRs.png)
  
-**NOTE**: Data for this proposal was collected on October 28th, 2015.
+**NOTE**: Data for this proposal was collected on February 1st, 2017 and October 28th, 2015.
  
 
 # Cordova Plugins:
