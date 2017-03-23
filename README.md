@@ -30,7 +30,7 @@ For adding new proposals and ideas, please review instructions [here](proposals/
 | [Platform project](proposals/PlatformProject.md) | Some ideas adopted into the Cordova Platform API work.
 | [Plugin version fetching - improve plugin versioning story](proposals/plugin-version-fetching.md) | Completed & part of Cordova 6.1
 | [New information architecture for Cordova](proposals/NewInformationArchitecture.md) | Completed and live on docs.cordova.io.
-| [Add Telemetry to Cordova CLI](proposals/Telemetry.md) | In Progress
+| [Add Telemetry to Cordova CLI](proposals/Telemetry.md) | Completed
 | Ideas for improving documentation [[1]](proposals/ImprovedDocumentation.md) [[2]](proposals/ImproveCordovaDocumentation.md) | Most of the recommendations completed |
 | [CI for PRs submitted for cordova plugins](proposals/ci-for-plugin-prs.md) | Completed
 | [Unified cordova-fetch proposal](https://github.com/cordova/cordova-discuss/blob/master/proposals/fetching.md) | Completed
