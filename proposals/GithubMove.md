@@ -53,30 +53,32 @@ https://issues.apache.org/jira/browse/INFRA-14347
 - cordova-plugins
 
 ## NOT Moving -> Misc (11)
-cordova-template-reference
-cordova-test-platform
-cordova-serve
-cordova-medic
-cordova-mobile-spec
-cordova-labs
-cordova-registry-web
-cordova-registry
-cordova-weinre
-cordova-app-harness
-cordova-app-hello-world
+
+- cordova-template-reference
+- cordova-test-platform
+- cordova-serve
+- cordova-medic
+- cordova-mobile-spec
+- cordova-labs
+- cordova-registry-web
+- cordova-registry
+- cordova-weinre
+- cordova-app-harness
+- cordova-app-hello-world
 
 ## NOT Moving -> Platforms (14)
-cordova-electron
-cordova-amazon-fireos
-cordova-firefoxos
-cordova-osx
-cordova-windows-phone
-cordova-wp7
-cordova-wp8
-cordova-tizen
-cordova-ubuntu
-cordova-webos
-cordova-qt
-cordova-bada
-cordova-bada-wac
-cordova-blackberry
+
+- cordova-electron
+- cordova-amazon-fireos
+- cordova-firefoxos
+- cordova-osx
+- cordova-windows-phone
+- cordova-wp7
+- cordova-wp8
+- cordova-tizen
+- cordova-ubuntu
+- cordova-webos
+- cordova-qt
+- cordova-bada
+- cordova-bada-wac
+- cordova-blackberry
