@@ -22,7 +22,7 @@ For adding new proposals and ideas, please review instructions [here](proposals/
 |----------|-------------------
 | [Nightly Builds for Cordova and platforms](proposals/NightlyBuilds.md) | Completed |
 | [Templates in Cordova CLI](proposals/CLI-Templates.md) | Completed |
-| [Cordova platform API](cordova-lib refactoring\Cordova-lib refactoring proposal.md) | Completed |
+| [Cordova-lib Refactoring proposal](proposals/cordova-lib%20refactoring/Cordova-lib%20refactoring%20proposal.md) | Completed |
 | [Cordova Face2Face Oct 2015 meeting](proposals/Face2Face-Oct15.md) | Meeting held Oct 15 - completed |
 | [Automatic Generation of plugin API docs](proposals/ImprovedDocumentationGenerator.md) | Completed only for cordova-plugin-camera |
 | [Removal of whitelist from iOS platform](proposals/ios-whitelist-removal.md) | Completed
