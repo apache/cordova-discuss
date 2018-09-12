@@ -1,5 +1,5 @@
 # Swift Plugin Support
-- Status: Proposed
+- Status: Completed
 
 ## Overview
 
