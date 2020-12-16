@@ -2,7 +2,7 @@
 
 ## Do cookies work in Cordova apps?
 
-The rules for cookies in the Cordova apps the same as everywhere. You should not expect your app to be able to persist cookies for its own use, because generally speaking Cordova applications aren't backed by a web server and thus have no place to store cookies. Most Cordova platforms serve files from the `file:///` protocol, and thus subject to standard browser security rules. This is means that non-GET requests whould be subject to CORS and preflight OPTIONS request would be issued for POST and other verbs. Good exaplanations about CORS and Cordova app could be found [here] (http://stackoverflow.com/questions/9103876/cors-cookie-credentials-from-mobile-webview-loaded-locally-with-file). In case you don't heard about CORS, you could start reading about [CORS on HTML5Rocks](http://www.html5rocks.com/en/tutorials/cors/).
+The rules for cookies in the Cordova apps the same as everywhere. You should not expect your app to be able to persist cookies for its own use, because generally speaking Cordova applications aren't backed by a web server and thus have no place to store cookies. Most Cordova platforms serve files from the `file:///` protocol, and thus subject to standard browser security rules. This is means that non-GET requests whould be subject to CORS and preflight OPTIONS request would be issued for POST and other verbs. Good exaplanations about CORS and Cordova app could be found [here](http://stackoverflow.com/questions/9103876/cors-cookie-credentials-from-mobile-webview-loaded-locally-with-file). In case you don't heard about CORS, you could start reading about [CORS on HTML5Rocks](http://www.html5rocks.com/en/tutorials/cors/).
 
 ## How to work with cookies in Cordova apps?
 
